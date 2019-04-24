@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  diceapp
 //
-//  Created by user152277 on 4/16/19.
-//  Copyright © 2019 user152277. All rights reserved.
+//  Created by Lance Woloszyn on 4/16/19.
+//  Copyright © 2019 Lance Woloszyn. All rights reserved.
 //
 
 import UIKit

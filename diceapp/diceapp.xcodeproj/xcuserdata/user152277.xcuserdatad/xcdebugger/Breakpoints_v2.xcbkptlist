@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "diceapp/Viewcontroller2.swift"
-            timestampString = "577496352.830907"
+            timestampString = "577761629.091873"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "dTwenty(_:)"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "dFour(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

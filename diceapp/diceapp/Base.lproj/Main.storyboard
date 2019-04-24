@@ -40,23 +40,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3886" y="39"/>
+            <point key="canvasLocation" x="4361" y="25"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller2-->
         <scene sceneID="Pyf-zU-1TW">
             <objects>
-                <viewController id="2vU-Y9-Lru" sceneMemberID="viewController">
+                <viewController id="2vU-Y9-Lru" customClass="ViewController2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0BN-8b-TDz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDk-Ku-lhH">
-                                <rect key="frame" x="88" y="148" width="30" height="30"/>
-                                <state key="normal" title="D4"/>
-                                <connections>
-                                    <action selector="dFour:" destination="EYK-yo-jfY" eventType="touchUpInside" id="2Se-R0-25f"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQP-fa-fk4">
                                 <rect key="frame" x="88" y="252" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -109,13 +102,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBs-xI-o1e">
-                                <rect key="frame" x="236" y="153" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9z-oB-8CU">
                                 <rect key="frame" x="236" y="261" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -158,18 +144,44 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTj-Yu-xJC">
+                                <rect key="frame" x="88" y="148" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="D4"/>
+                                <connections>
+                                    <action selector="dFour:" destination="EYK-yo-jfY" eventType="touchUpInside" id="Nlb-dn-YYV"/>
+                                    <action selector="dFour:forEvent:" destination="EYK-yo-jfY" eventType="touchUpInside" id="kmC-bK-3Ng"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="dFourLabel" text="dFourLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVR-CH-qug" userLabel="dFourLabel">
+                                <rect key="frame" x="228" y="148" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="dFourLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="EDk-Ku-lhH" firstAttribute="leading" secondItem="spd-hB-eqH" secondAttribute="leading" constant="88" id="6Kw-ZW-lV7"/>
-                        </constraints>
+                        <accessibility key="accessibilityConfiguration">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                         <viewLayoutGuide key="safeArea" id="spd-hB-eqH"/>
                     </view>
+                    <connections>
+                        <outlet property="dEightLabel" destination="H5B-F0-avG" id="DgM-Rh-Qan"/>
+                        <outlet property="dFourLabel" destination="eVR-CH-qug" id="1t2-cH-xNZ"/>
+                        <outlet property="dHundredLabel" destination="rFM-cF-QgT" id="DVs-od-hK3"/>
+                        <outlet property="dSixLabel" destination="E9z-oB-8CU" id="W0h-Z5-wf7"/>
+                        <outlet property="dTenLabel" destination="k5o-Qz-H92" id="RKI-L5-Bxc"/>
+                        <outlet property="dTwelveLabel" destination="oyM-tP-ZIa" id="0yg-oX-zUJ"/>
+                        <outlet property="dTwentyLabel" destination="Jzy-RH-kuN" id="i33-e4-m1u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hN8-Y6-SGG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="EYK-yo-jfY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4430" y="39"/>
+            <point key="canvasLocation" x="4977" y="25"/>
         </scene>
     </scenes>
 </document>
